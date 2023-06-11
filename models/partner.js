@@ -1,4 +1,4 @@
-const mongoose = requrie('mongoose')
+const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const partnerSchema = new Schema({
@@ -12,7 +12,8 @@ const partnerSchema = new Schema({
         required: true
     },
     featured: {
-        type: Boolean
+        type: Boolean,
+        default: false
     },
     description: {
         type: String,
